@@ -1,0 +1,10 @@
+applications:
+- name: ca-test
+  instances: 1
+  memory: 128M
+  disk_quota: 1024M
+  buildpack: go_buildpack
+  env:
+    GOPACKAGENAME: ca-test
+    WAITING_TIME: 1m
+  stack: cflinuxfs2
